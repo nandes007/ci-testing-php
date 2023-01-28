@@ -13,14 +13,6 @@ class SubsriptionTest extends TestCase
     /**
      * @test
      */
-    function it_creates_a_stripe_subscription()
-    {
-        $this->markTestSkipped();
-    }
-
-    /**
-     * @test
-     */
     function creating_a_subscription_marks_the_user_as_subscribed()
     {
         $gateway = new FakeGateway(); // don't use the actual Gateway. Use dummy/fake version.
